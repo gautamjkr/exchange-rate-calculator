@@ -1,0 +1,136 @@
+body {
+    font-family: monospace;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(https://i.imgur.com/Y1OCj5V.jpg);  
+}
+
+.title {
+  font-size: 36px;
+}
+
+.some-text {
+    font-size: 1.5rem;
+}
+
+.text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+#result {
+    overflow: hidden;
+    resize: none;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    border: none;
+    font-size: 1.8rem;
+    font-family: monospace;
+    font-weight: bolder; 
+    background-color: #00000000;
+}
+
+#swap {
+    height: 40px;
+    width: 40px;
+    margin: auto 5px; 
+}
+
+#swap:hover {
+    animation-name: turn;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+    100% {
+        transform: scaleX(-1) 
+    }
+}
+
+.functional-part {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.head-div {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.body-div {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.currency {
+    width: 50%;
+    font-size: x-large;
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+
+.currency:focus, .amount:focus, #swap:focus, #result:focus {
+    outline: purple solid 4px;   
+}
+
+.amount {
+     width: 45%;
+     height: 40px;
+     font-size: x-large;
+     font-weight: bolder; 
+     padding-left: 20px;
+     background-color: rgb(214, 213, 213);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    font-weight: bolder;
+}
+
+@media (max-width: 420px) {
+    .title {
+        font-size:24px ;
+    }
+
+    .some-text {
+        font-size: 1.2rem;
+    }
+
+    #result {
+        font-size: 1.3rem;
+    }
+
+    .currency {
+    font-size: small;
+    }
+
+    .amount {
+    height: 30px;
+    font-size: small;
+    }
+
+    #swap {
+        height: 20px;
+        width: 20px;
+    }
+}
